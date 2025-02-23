@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
         canvas {
-            display: block;
-            margin: 0 auto;
-            background-color: #fff; /* Changed background color to white */
-            border: 3px solid #000; /* Changed border color to black for better contrast */
+            background-color: #fff;
+            border: 3px solid #000;
         }
         #score {
             text-align: center;
             font-size: 20px;
             margin-top: 10px;
+            color: #333;
+        }
+        footer {
+            margin-top: 20px;
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <h1>Snake Game</h1>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <div id="score">Score: 0</div>
+    <footer>Created by Serhii</footer>
     <script src="snake.js"></script>
 </body>
 </html>
